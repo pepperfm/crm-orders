@@ -1,0 +1,7 @@
+html.dark {
+    --el-bg-color: #11182700;
+}
+
+html.dark .el-card {
+    --el-card-bg-color: var(--el-bg-color)
+}
