@@ -1,4 +1,14 @@
-# Build
+# About me:
+### [https://pepperfm.com](https://pepperfm.com)
+
+---
+# About project
+
+## Production
+### [https://bp-manager.ru](https://bp-manager.ru)
+
+
+## Local build
 `cp .env.example .env`
 
 Set system `uid` amd `gid` to `WWWUSER` and `WWWGROUP` variables
@@ -25,18 +35,19 @@ Then
 ./sail bun run build
 ```
 
-# There is two routes available for test:
-```
+## There is two routes available for test:
 Pre-built: [Breezy](https://laravel.com/docs/12.x/starter-kits#vue) starter kit
-Front. framework: Vue.js (Composition API)
-UI/UX libraries: [Element Plus](https://element-plus.org/en-US/component/button.html)
 
+Front. framework: Vue.js (Composition API)
+
+UI/UX libraries: [Element Plus](https://element-plus.org/en-US/component/button.html)
+```
 URL:
 get: /dashboard
 ```
-```
+---
 Pre-built: [Filament](https://filamentphp.com/docs/3.x/panels/getting-started)
-
+```
 URL:
 get: /panel
 ```
