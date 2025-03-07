@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Head, Link } from '@inertiajs/vue3'
+import { Head } from '@inertiajs/vue3'
 
 defineProps<{
   canLogin?: boolean
@@ -24,7 +24,7 @@ defineProps<{
       <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
         <main class="mt-6">
           <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
-            <Link
+            <a
               :href="route('filament.panel.pages.dashboard')"
               class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
             >
@@ -49,9 +49,9 @@ defineProps<{
                   d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
                 />
               </svg>
-            </Link>
+            </a>
 
-            <Link
+            <a
               :href="route('dashboard')"
               class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
             >
@@ -76,7 +76,7 @@ defineProps<{
                   d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
                 />
               </svg>
-            </Link>
+            </a>
           </div>
         </main>
       </div>
