@@ -14,7 +14,6 @@ readonly class CategoryRepository implements CategoryRepositoryContract
     ) {
     }
 
-
     public function get(array $relations): Collection
     {
         return $this->model

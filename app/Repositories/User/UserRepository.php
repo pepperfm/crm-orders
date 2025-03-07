@@ -14,7 +14,6 @@ readonly class UserRepository implements UserRepositoryContract
     ) {
     }
 
-
     public function get(array $relations): Collection
     {
         return $this->model

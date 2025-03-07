@@ -21,7 +21,7 @@ class ProductData extends Data
         public int $categoryId,
         #[MapName('created_at'), WithTransformer(DateTimeInterfaceTransformer::class, format: 'd-m-Y H:i')]
         public Carbon $createdAt,
-        #[MapName('updated_at'),WithTransformer(DateTimeInterfaceTransformer::class, format: 'd-m-Y H:i')]
+        #[MapName('updated_at'), WithTransformer(DateTimeInterfaceTransformer::class, format: 'd-m-Y H:i')]
         public Carbon $updatedAt,
     ) {
     }

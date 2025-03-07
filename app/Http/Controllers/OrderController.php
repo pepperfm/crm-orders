@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Services\User\UserService;
 use Inertia\Inertia;
 use App\Services\Product\ProductService;
 use App\Services\Order\OrderService;
+use App\Services\User\UserService;
 use App\Data\Order\Requests\StoreRequest;
 use App\Data\Order\Responses\IndexResponse;
 use App\Data\Order\Responses\ShowResponse;

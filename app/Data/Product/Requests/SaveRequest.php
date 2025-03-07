@@ -15,7 +15,7 @@ class SaveRequest extends Data
 {
     public function __construct(
         #[FromRouteParameter('product')]
-        public string|Optional $id,
+        public Optional|string $id,
         public string $name,
         public string $description,
         #[MapName('category_id'), Exists(Category::class, 'id')]

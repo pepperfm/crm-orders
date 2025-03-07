@@ -40,7 +40,7 @@ readonly class ProductRepository implements ProductRepositoryContract
             ->with($relations)
             ->when(
                 $request->input('order_by') && $request->input('direction'),
-                fn ($query) => $query->orderBy(
+                static fn($query) => $query->orderBy(
                     column: $request->input('order_by', 'created_at'),
                     direction: $request->input('direction', 'desc'),
                 )
