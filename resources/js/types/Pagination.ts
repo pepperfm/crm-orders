@@ -19,8 +19,8 @@ export interface IPaginatedResponse<T> {
   from: number
   to: number
   total: number
-  prev_page_url: string | null | URL
-  next_page_url: string | null | URL
+  prev_page_url: string | URL
+  next_page_url: string | URL
   path: string
 }
 
