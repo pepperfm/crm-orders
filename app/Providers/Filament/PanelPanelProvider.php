@@ -27,7 +27,7 @@ class PanelPanelProvider extends PanelProvider
             ->default()
             ->id('panel')
             ->path('panel')
-            ->login()
+            ->login(\App\Filament\Pages\Auth\Login::class)
             ->colors([
                 'primary' => Color::Violet,
             ])
